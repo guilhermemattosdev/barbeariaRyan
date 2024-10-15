@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/test pop-up/pop-up.css">
+
+</head>
+
+<body>
+    <div class="mainContent">
+
+        <div class="leftContent">
+
+        </div>
+        <div class="rightContent">
+            <div class="horarios">
+                <div class="contentHeader">
+                    <div class="textContent">
+                        <h1>Sua agenda</h1>
+                        <h4>Consulte os seus cortes de cabelo agendados por dia</h4>
+                    </div>
+                    <div class="agenda">
+                    </div>
+                </div>
+                <div class="timezoneContent">
+                    <div class="timezone" id="manha">
+                        <div class="header">
+                            <div class="headerLeftContent" id="headerManha">
+                                <img class="icon" src="/assets/IconManha.svg" alt="manha">
+                                <span class="spanHorario">Manhã</span>
+                            </div>
+                            <div class="headerRightContent" id="headerManha">
+                                <span class="spanHorario">09h-12h</span>
+                            </div>
+                        </div>
+                        <div class="contentTimezone" id="manhaContent">
+
+                        </div>
+                    </div>
+                    <div class="timezone" id="tarde">
+                        <div class="header">
+                            <div class="headerLeftContent" id="headerTarde">
+                                <img class="icon" src="/assets/IconTarde.svg" alt="tarde">
+                                <span class="spanHorario">Tarde</Span>
+                            </div>
+                            <div class="headerRightContent" id="headertarde">
+                                <span class="spanHorario">13h-18h</span>
+                            </div>
+                        </div>
+                        <div class="contentTimezone" id="tardeContent">
+                            <div class="reserva">
+                                <div class="reservaLeft"><span class="time">14:00</span> <span class="name">Guilherme
+                                        Mattos</span></div>
+                                <div class="reservaRight"><button class="btnEdit" id="btnEdicao">
+                                        <img class="icon" id="edit" src="/assets/icons8-pencil-64.png"
+                                            alt="edição de reserva"></button>
+                                </div>
+                                <dialog class="dialogWrapper">
+                                    <div class="popUpWrapper">
+                                        <div class="buttonCloseWrapper">
+                                            <button class="buttonClose" id="buttonCloseId"><img class="buttonCloseIcon"
+                                                    src="/assets/icons8-close.svg" alt="fechar"></button>
+                                        </div>
+
+                                        <form action="">
+                                            <label for="name">Nome</label><br>
+                                            <input type="text" name="name" id="name" value="Guilherme Mattos"
+                                                disabled=""><br>
+                                            <label for="number">Número</label><br>
+                                            <input type="tel" name="number" id="number" value="(21) 97725-2287"
+                                                disabled><br>
+                                            <div class="contentHorario">
+                                                <label for="time">Horário</label>
+                                                <input type="time" name="time" id="time" value="10:00">
+                                            </div>
+                                            <div class="buttonWrapper">
+                                                <button class="buttonEditar">Editar</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </dialog>
+                            </div>
+                            <div class="reserva">
+                                <div class="reservaLeft"><span class="time">15:00</span> <span class="name">Filipe
+                                        Rosa</span></div>
+                                <div class="reservaRight"><button class="btnEdit" id="btnEdicao1">
+                                        <img class="icon" id="edit" src="/assets/icons8-pencil-64.png"
+                                            alt="edição de reserva"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timezone" id="noite">
+                        <div class="header">
+                            <div class="headerLeftContent" id="headerNoite">
+                                <img class="icon" src="/assets/IconNoite.svg" alt="noite">
+                                <span class="spanHorario">Noite</span>
+                            </div>
+                            <div class="headerRightContent" id="headerNoite">
+                                <span class="spanHorario">19h-22h</span>
+                            </div>
+                        </div>
+                        <div class="contentTimezone" id="noiteContent">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="pop-upEdit.js"></script>
+</body>
+
+</html>

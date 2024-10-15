@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #19181B;
+}
+
+.mainContent{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+}
+
+.leftContent{
+    height: 100%;
+    background-color: #232225;
+    border-radius: 16px;
+    margin: 8px;
+}
+
+.rightContent{
+    background-color: #19181B;
+    margin: 80px 112px;
+}
+
+h1{
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+h4{
+    color: #98959D;
+    font-weight: 450;
+}
+
+.contentHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timezoneContent{
+    margin-top: 32px;
+}
+
+.timezone{
+    border: 1px solid #2E2C30;
+    width: 100%;
+    /* height: 100px; */
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px solid #2E2C30;
+}
+
+.headerLeftContent{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 12px;
+}
+
+.headerRightContent{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 12px;
+}
+
+
+.icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.spanHorario{
+    color: #98959D;
+    font-size: x-small;
+}
+
+.contentTimezone{
+    margin: 8px 16px;
+    padding: 4px;
+}
+
+.time{
+    color: #B2AFB6;
+    font-size: small;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.name{
+    color: #B2AFB6;
+    font-size: small;
+    font-weight: 350;
+}
+
+.reserva{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#edit{
+    cursor: pointer;
+}
+
+.btnEdit{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+

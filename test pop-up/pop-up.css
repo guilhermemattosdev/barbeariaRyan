@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+label{
+    color: #98959D;
+    font-size: small;
+    font-weight: 550;
+}
+
+#name, #number, #time{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #2E2C30;
+    border-radius: 16px;
+    padding: 6px;
+    color: #B2AFB6;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+input[type="time"]{
+    display: flex;
+    width: +40px;
+    justify-content: center;
+}
+
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input, label{
+    margin: 4px;
+}
+
+.popUpWrapper{
+    height: 300px;
+    margin: 16px;
+    border-radius: 0 0 8px 8px;
+    background-color: #232225;
+    width: 248px;
+    /* justify-content: center; */
+    /* display: flex; */
+    -webkit-box-shadow: 5px 14px 37px -7px rgb(5, 5, 5);
+    -moz-box-shadow: 5px 14px 37px -7px rgba(5, 5, 5, 1);
+    box-shadow: 5px 14px 37px -7px rgba(5, 5, 5, 1);
+}
+
+.buttonWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    align-content: center;
+    margin: 18px;
+}
+
+#number, #name{
+    cursor: not-allowed;
+    color: #79797a;
+    font-weight: 500;
+}
+
+
+/* From Uiverse.io by css.buttonEditars-io */ 
+.buttonEditar {
+    --color: #B8952E;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 1.8em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .buttonEditar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .buttonEditar:hover {
+    color: #fff;
+  }
+  
+  .buttonEditar:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .buttonEditar:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .buttonEditar:active:before {
+    background: #B8952E;
+    transition: background 0s;
+  }
+
+.buttonCloseIcon{
+  width: 16px;
+  height: 16px;
+}
+  
+
+.buttonClose{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 16px;
+  height: 16px;
+  margin: 16px 28px;
+  cursor: pointer;
+}
+
+.buttonCloseWrapper{
+  width: 100%;
+  height: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.dialogWrapper{
+  border: 0;
+}
+
+.dialogWrapper{
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog[open] {
+  animation: fadein 0.3s ease-in;
+}
+
+@keyframes fadein{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
