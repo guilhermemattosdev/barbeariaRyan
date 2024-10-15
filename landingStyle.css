@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root{
+    --primary: #141414;
+    --primary2: #16151A;
+    --secundary: #CFAC80;
+    --fontColorBlack: #212427;
+    --fontColorWhite: #D4D4D4;
+}
+
+body{
+    background-color: black;
+
+}
+
+.mainWrapper{
+    background-image: url(./assets/frantisek-canik-D7ly5lUDTCY-unsplash\ 1.png);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerMain{
+    height: 84px;
+    justify-content: space-between;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0 128px;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid var(--fontColorWhite);
+}
+
+.leftContentHeader{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.rightContentHeader{
+    display: flex;
+    align-items: center;
+}
+
+.headerLinkContainer{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.headerLink{
+    color: var(--fontColorWhite);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 18px;
+    border: 0;
+    
+}
+
+#iconUsuario{
+    width: 28px;
+    height: 28px;
+}
+
+.logo{
+    width: 48px;
+}
+
+.headerLink {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+.headerLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 0; 
+    background-color: var(--fontColorWhite);
+    transition: width 0.4s ease-in-out;
+}
+
+.headerLink:hover::after {
+    width: 100%;
+}
+
+
+/* ---- Header acaba aqui ---- */
+
+/* ---- Main começa aqui ---- */
+
+.contentText{
+    padding: 100px 128px;
+    width: 40%;
+}
+
+.contentTittle h1{
+    font-size: 58px;
+    color: var(--fontColorWhite);
+    margin-bottom: 16px;
+}
+
+.contentSubtittle{
+    width: 84%;
+}
+
+.contentSubtittle h3{
+    font-size: 20px;
+    color: #DFDFDF;
+    font-weight: 100;
+    line-height: 1.2;
+}
