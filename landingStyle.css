@@ -101,7 +101,7 @@ body{
 }
 
 .contentTittle h1{
-    font-size: 58px;
+    font-size: 4rem;
     color: var(--fontColorWhite);
     margin-bottom: 16px;
 }
@@ -111,8 +111,82 @@ body{
 }
 
 .contentSubtittle h3{
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #DFDFDF;
     font-weight: 100;
     line-height: 1.2;
+}
+
+#buttonMain{
+    background-color: var(--secundary);
+    color: var(--fontColorBlack);
+    width: 128px;
+    height: 58px;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 2px;
+    border: none;
+    margin: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in, color 0.4s ease-in, border 0.4s ease-in;
+}
+
+#buttonMain:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid var(--secundary);
+    color: var(--secundary);
+}
+
+/* ----mainWrapper acaba aqui---- */
+
+/* ----avaliationWrapper começa aqui---- */
+
+.avaliationWrapper{
+    display: flex;
+    justify-content: space-around;
+    height: 268px;
+    background-color: var(--secundary);
+    align-items: center;
+    padding: 0px 114px;
+}
+
+.commentContent{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    margin: 32px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.userProfile{
+    display: flex;
+    height: min-content;
+    margin: 16px;
+}
+
+.userProfileIcon{
+    display: flex;
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    background-color: var(--secundary);
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.userProfileText{
+    display: flex;
+    color: var(--primary);
+    font-size: 28px;
+}
+
+.userProfileName{
+    display: flex;
+    align-items: center;
+    color: var(--fontColorWhite);
+    font-size: 18px;
+    font-weight: bolder;
 }
