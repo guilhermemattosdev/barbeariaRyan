@@ -19,7 +19,7 @@ body{
 
 .mainWrapper{
     background-image: url(./assets/frantisek-canik-D7ly5lUDTCY-unsplash\ 1.png);
-    height: 90vh;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -126,7 +126,7 @@ body{
     font-size: 22px;
     border-radius: 2px;
     border: none;
-    margin: 16px;
+    margin: 24px 16px;
     cursor: pointer;
     transition: background-color 0.4s ease-in, color 0.4s ease-in, border 0.4s ease-in;
 }
@@ -152,18 +152,20 @@ body{
 
 .commentContent{
     display: flex;
+    flex-direction: column;
     height: 80%;
     width: 100%;
     margin: 32px;
     background-color: var(--primary);
     border-radius: 4px;
     justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 .userProfile{
     display: flex;
     height: min-content;
-    margin: 16px;
 }
 
 .userProfileIcon{
@@ -190,3 +192,14 @@ body{
     font-size: 18px;
     font-weight: bolder;
 }
+
+.commentTextContent{
+    width: 80%;
+}
+
+
+.commentTextContent p{
+    color: var(--fontColorWhite);
+    font-size: 14px;
+    text-align: center;
+}   
