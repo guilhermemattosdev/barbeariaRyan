@@ -207,9 +207,14 @@ body{
 /* ----mainWrapper Acaba Aqui---- */
 /* ----CarouselWrapper Começa Aqui---- */
 
+.carouselWrapper{
+    background-color: #161616;
+    padding: 50px;
+}
+
 .carousel-container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -268,4 +273,72 @@ body{
 
 .active {
     background-color: var(--secundary);
+}
+
+.footerLanding{
+    background-color: var(--primary);
+    height: 40vh;
+    padding: 64px 5vw;
+}
+
+.wrapperFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-top: 2px solid var(--secundary);
+    border-bottom: 2px solid var(--secundary);
+    padding: 0 5vw;
+}
+
+.leftFooterContent{
+    margin: 64px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#logoFooter{
+    height: 60%;
+}
+
+.rightFooterContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerText{
+    color: var(--secundary);
+}
+
+.contactUsContent{
+    margin-bottom: 32px;
+}
+
+.locationContent{
+    margin: 16px 0;
+    gap: 8px;
+    display: flex;
+}
+
+.telContent{
+    margin: 16px 0;
+    gap: 8px;
+    display: flex;
+}
+
+.socialMediaContent{
+    display: flex;
+    margin: 32px;
+    gap: 16px;
+}
+
+.socialMediaIcons{
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+}
+
+#spanFooterText{
+    margin-bottom: 8px;
 }
